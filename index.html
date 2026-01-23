@@ -19,37 +19,6 @@
   <meta name="twitter:site" content="@ale.atelie" />
   <meta name="twitter:image" content="./assets/selo-vinho.webp" />
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Alê Ateliê",
-      "image": "https://www.seusite.com.br/assets/selo-vinho.webp",
-      "description": "Alê Ateliê oferece serviços de alta qualidade em reparos, ajustes e confecção de roupas personalizadas em Toledo - PR.",
-      "url": "https://www.seusite.com.br",
-      "telephone": "+55-55-99108-5569",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Toledo",
-        "addressRegion": "PR",
-        "addressCountry": "BR"
-      },
-      "openingHours": [
-        "Mo-Fr 09:00-18:00",
-        "Sa 09:00-14:00"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "telephone": "+55-55-99108-5569",
-        "email": "ateliedecosturaalemartins@gmail.com"
-      },
-      "sameAs": [
-        "https://www.instagram.com/_ale_atelie_/",
-        "https://api.whatsapp.com/send?phone=5555991085569"
-      ]
-    }
-  </script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
@@ -71,6 +40,10 @@
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     onload="this.onload=null;this.rel='stylesheet'" as="style">
   <link rel="stylesheet" href="./main.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 </head>
 
 <body>
@@ -125,7 +98,7 @@
           </div>
           <div class="relative p-2 shadow-lg rounded-lg overflow-hidden max-sm:hidden" style="border-radius: 100%"
             data-speed="0.1">
-            <img loading="lazy" src="./assets/selo-vinho.webp" alt="Alê Ateliê - Estúdio de moda e costura"
+            <img loading="lazy" src="./assets/foto_maq.webp" alt="Alê Ateliê - Estúdio de moda e costura"
               class="w-full h-full object-cover object-center dashed-logo p-3" width="576" height="576" />
           </div>
         </div>
@@ -150,7 +123,7 @@
             <div class="p-4 justify-self-center content-center transition-all duration-300 max-sm:p-0">
               <div class="p-4 max-sm:p-0">
                 <div class="text-center">
-                  <h3 class="text-4xl font-semibold text-primary-red-900 mb-2 max-sm:text-3xl">+100</h3>
+                  <h3 class="text-4xl font-semibold text-primary-red-900 mb-2 max-sm:text-3xl">+200</h3>
                   <p class="text-primary-black text-lg max-sm:text-lg">Roupas reparadas e renovadas</p>
                 </div>
               </div>
@@ -159,7 +132,7 @@
             <div class="p-4 justify-self-center transition-all duration-300 max-sm:p-0">
               <div class="p-4 max-sm:p-0">
                 <div class="text-center">
-                  <h3 class="text-4xl font-semibold text-primary-red-900 mb-2 max-sm:text-3xl">+20</h3>
+                  <h3 class="text-4xl font-semibold text-primary-red-900 mb-2 max-sm:text-3xl">+40</h3>
                   <p class="text-primary-black text-lg max-sm:text-lg">Clientes satisfeitos</p>
                 </div>
               </div>
@@ -328,34 +301,43 @@
     </section>
 
     <!-- Clients Section -->
-    <section id="clients" class="py-16 md:py-8 bg-white animate-fade-up">
-      <div class="text-center max-w-2xl mx-auto" data-speed="0.15">
-        <h2 class="text-primary-black font-semibold text-5xl mb-8 max-sm:text-3xl">O que nossos clientes dizem</h2>
+    <section id="clients" class="py-16 bg-white">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-primary-black font-semibold text-5xl max-sm:text-3xl">
+          O que nossos clientes dizem
+        </h2>
       </div>
-      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 max-sm:grid-cols-1 gap-8">
 
-        <div class="bg-white w-full p-4 justify-self-center shadow-md hover:shadow-lg transition-all duration-300 ">
-          <div class="dashed-border-wrapper p-4">
-            <h4 class="text-xl text-primary-black text-primary-red-900 font-thin font-serif mb-3">Paulo Vitor</h4>
-            <p class="text-primary-black text-lg">
-              "A Alê Ateliê e a minha escolha perfeita para cuidar das minhas roupas!"
-            </p>
+      <div class="swiper max-w-7xl mx-auto">
+        <div class="swiper-wrapper">
+
+          <!-- SLIDE -->
+          <div class="swiper-slide p-4">
+            <div class="bg-white shadow-md p-6">
+              <h4 class="text-xl font-serif mb-3">Paulo Vitor</h4>
+              <p>"A Alê Ateliê é minha escolha perfeita."</p>
+            </div>
           </div>
-        </div>
-        <div class="bg-white w-full p-4 justify-self-center shadow-md hover:shadow-lg transition-all duration-300 ">
-          <div class="dashed-border-wrapper p-4">
-            <h4 class="text-xl text-primary-black text-primary-red-900 font-thin font-serif mb-3">Paulo Vitor</h4>
-            <p class="text-primary-black text-lg">
-              "A Alê Ateliê e a minha escolha perfeita para cuidar das minhas roupas!"
-            </p>
+
+          <div class="swiper-slide p-4">
+            <div class="bg-white shadow-md p-6">
+              <h4 class="text-xl font-serif mb-3">João Gaffuri</h4>
+              <p>"O resultado superou as expectativas."</p>
+            </div>
           </div>
-        </div>
-        <div class="bg-white w-full p-4 justify-self-center shadow-md hover:shadow-lg transition-all duration-300 ">
-          <div class="dashed-border-wrapper p-4">
-            <h4 class="text-xl text-primary-black text-primary-red-900 font-thin font-serif mb-3">Paulo Vitor</h4>
-            <p class="text-primary-black text-lg">
-              "A Alê Ateliê e a minha escolha perfeita para cuidar das minhas roupas!"
-            </p>
+
+          <div class="swiper-slide p-4">
+            <div class="bg-white shadow-md p-6">
+              <h4 class="text-xl font-serif mb-3">Marcus Vinicius</h4>
+              <p>"Dá pra sentir o amor em cada peça."</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide p-4">
+            <div class="bg-white shadow-md p-6">
+              <h4 class="text-xl font-serif mb-3">Maycon Lunkes</h4>
+              <p>"Nada industrial, tudo feito com alma."</p>
+            </div>
           </div>
         </div>
       </div>
@@ -491,8 +473,8 @@
         </div>
       </div>
       <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-white/70 text-sm">© 2025 Alê Ateliê. Todos os direitos reservados.</p><button
-          class="mt-4 md:mt-0 flex items-center text-white/70 hover:text-white transition-colors"
+        <p class="text-white/70 text-sm">©2026 Alê Ateliê. Todos os direitos reservados.</p><button
+          class="mt-4 md:mt-0 flex items-center text-white/70 hover:text-white transition-colors" id="btnTopo"
           aria-label="Voltar ao topo"><span class="mr-2">Voltar ao topo</span><svg xmlns="http://www.w3.org/2000/svg"
             width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up">
@@ -503,7 +485,20 @@
     </div>
   </footer>
 
+  <a
+    href="https://api.whatsapp.com/send?phone=5555991085569&text="
+    target="_blank"
+    aria-label="Falar no WhatsApp"
+    class="whatsapp-float"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
+      alt="WhatsApp"
+    />
+  </a>
+
   <!-- Application Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="main.js"></script>
 </body>
